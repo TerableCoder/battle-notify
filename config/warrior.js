@@ -8,31 +8,31 @@ module.exports = [
 		rewarn_timeout: 10
 	},
 
-/*
+
 	// Blade Draw Reset
 	{
 		type: 'Reset',
 		skills: [290100, 370100], // normal & deadly gamble version of blade draw
 		message: '{icon} Reset'
 	},
+	
+		//Traverse buff expiring
+	{
+        type: 'Expiring',
+		target: 'Self',
+        abnormalities: [101300,101301], 
+        message: '{icon}T-cut {duration} ',
+		time_remaining: [5, 2, 1]
+    },
+	
+/*		//dg expiring
+	{
+        type: 'Expiring',
+		skills: 200100
+        abnormalities: [100800,100801], 
+        message: '{icon} up in {duration} ',
+		time_remaining: [16, 5]
+    },
 */
-
-/*
-	// Vergos Aggro Debuff
-   {
-		type: 'AddedOrRefreshed',
-		target: 'PartyIncludingSelf',
-		abnormalities: 950023,
-		message: '{name} has {stacks} stack(s)',
-		required_stacks: 1
-	},
-
-	// Vergos Aggro Debuff Expire
-   {
-		type: 'Removed',
-		target: 'PartyIncludingSelf',
-		abnormalities: 950023,
-		message: '{name}\'s stacks expired'
-	},
-*/
+	
 ]
